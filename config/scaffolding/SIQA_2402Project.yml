@@ -36,6 +36,24 @@ services:
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
+- serviceName: project.siqa_2402.integrations:deepclonetest
+  packages:
+  - name: SIQA_2402Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+- serviceName: pub.string:stringToBytes
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2036
+- serviceName: pub.utils:deepClone
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2036
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2036
 configurationVariables:
   ? artConnection.SIQA_2402Project.project.siqa_2402.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.keyStore
   : ""
